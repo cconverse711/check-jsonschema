@@ -135,11 +135,11 @@ SCHEMA_CATALOG: dict[str, dict[str, t.Any]] = {
                 "Validate Development Container config against the schema provided "
                 "by Microsoft"
             ),
-            "files": (
-                r"^\.devcontainer/devcontainer.json$",
-                r"^\.devcontainer.json$",
-                r"^\.devcontainer/.*/devcontainer.json$",
-            ),
+            "files": [
+                r"^\.devcontainer/devcontainer\.json$",
+                r"^\.devcontainer\.json$",
+                r"^\.devcontainer/[^/]*/devcontainer\.json$",
+            ],
             "types": "json",
         },
     },
