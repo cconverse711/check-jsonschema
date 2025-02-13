@@ -122,6 +122,27 @@ SCHEMA_CATALOG: dict[str, dict[str, t.Any]] = {
             "types": "yaml",
         },
     },
+    "devcontainer": {
+        "url": _githubusercontent_url(
+            "devcontainers",
+            "spec",
+            "main",
+            "schema/devContainer.schema.json",
+        ),
+        "hook_config": {
+            "name": "Validate Development Container config",
+            "description": (
+                "Validate Development Container config against the schema provided "
+                "by Microsoft"
+            ),
+            "files": (
+                r"^\.devcontainer/devcontainer.json$",
+                r"^\.devcontainer.json$",
+                r"^\.devcontainer/.*/devcontainer.json$",
+            ),
+            "types": "json",
+        },
+    },
     "drone-ci": {
         "url": "https://json.schemastore.org/drone.json",
         "hook_config": {

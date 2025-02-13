@@ -155,6 +155,20 @@ Validate Dependabot Config (v2) against the schema provided by SchemaStore
         - id: check-dependabot
 
 
+``check-devcontainer``
+~~~~~~~~~~~~~~~~~~~~~~
+
+Validate Development Container config against the schema provided by Microsoft
+
+.. code-block:: yaml
+    :caption: example config
+
+    - repo: https://github.com/python-jsonschema/check-jsonschema
+      rev: 0.31.1
+      hooks:
+        - id: check-devcontainer
+
+
 ``check-drone-ci``
 ~~~~~~~~~~~~~~~~~~
 

@@ -83,6 +83,19 @@ _HOOKID_PATH_MAP = {
         "good": (".github/dependabot.yml", ".github/dependabot.yaml"),
         "bad": (".dependabot.yaml", ".dependabot.yml"),
     },
+    "check-devcontainer": {
+        "good": (
+            ".devcontainer/devcontainer.json",
+            ".devcontainer.json",
+            ".devcontainer/dummy/devcontainer.json",
+        ),
+        "bad": (
+            "devcontainer.json",
+            ".devcontainer/.devcontainer.json",
+            ".devcontainer/1/2/devcontainer.json",
+            ".dummy/devcontainer.json",
+        ),
+    },
     "check-github-actions": {
         "good": (
             "action.yaml",
