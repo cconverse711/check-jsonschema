@@ -63,6 +63,16 @@ _HOOKID_PATH_MAP = {
             "bamboo-specs/README.md",
         ),
     },
+    "check-cmake-presets": {
+        "good": (
+            "CMakePresets.json",
+            "CMakeUserPresets.json",
+        ),
+        "bad": (
+            "path/to/CMakePresets.json",
+            "path/to/CMakeUserPresets.json",
+        ),
+    },
     "check-compose-spec": {
         "good": (
             "compose.yml",

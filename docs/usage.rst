@@ -91,6 +91,7 @@ SchemaStore and other sources:
 - ``vendor.bitbucket-pipelines``
 - ``vendor.buildkite``
 - ``vendor.circle-ci``
+- ``vendor.cmake-presets``
 - ``vendor.cloudbuild``
 - ``vendor.compose-spec``
 - ``vendor.dependabot``

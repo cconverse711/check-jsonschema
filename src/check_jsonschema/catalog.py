@@ -86,6 +86,19 @@ SCHEMA_CATALOG: dict[str, dict[str, t.Any]] = {
             "type": "yaml",
         },
     },
+    "cmake-presets": {
+        "url": _githubusercontent_url(
+            "Kitware", "CMake", "master", "Help/manual/presets/schema.json"
+        ),
+        "hook_config": {
+            "name": "Validate CMake Presets",
+            "description": (
+                "Validate CMake Presets against the schema provided by CMake"
+            ),
+            "files": [r"^CMakePresets\.json$", r"^CMakeUserPresets\.json$"],
+            "type": "json",
+        },
+    },
     "cloudbuild": {
         "url": "https://json.schemastore.org/cloudbuild.json",
         "hook_config": {

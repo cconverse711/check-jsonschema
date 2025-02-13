@@ -113,6 +113,20 @@ Validate CircleCI config against the schema provided by SchemaStore
         - id: check-circle-ci
 
 
+``check-cmake-presets``
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Validate CMake Presets against the schema provided by CMake
+
+.. code-block:: yaml
+    :caption: example config
+
+    - repo: https://github.com/python-jsonschema/check-jsonschema
+      rev: 0.31.1
+      hooks:
+        - id: check-cmake-presets
+
+
 ``check-cloudbuild``
 ~~~~~~~~~~~~~~~~~~~~
 
