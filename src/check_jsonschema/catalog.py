@@ -131,6 +131,9 @@ SCHEMA_CATALOG: dict[str, dict[str, t.Any]] = {
         ),
         "hook_config": {
             "name": "Validate Devbox config",
+            "description": (
+                "Validate Devbox config against the schema provided by Jetify"
+            ),
             "files": r"^devbox\.json$",
             "types": "json",
         },

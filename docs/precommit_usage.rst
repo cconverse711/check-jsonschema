@@ -158,7 +158,7 @@ Validate Dependabot Config (v2) against the schema provided by SchemaStore
 ``check-devbox``
 ~~~~~~~~~~~~~~~~
 
-Validate Devbox config against the schema provided by SchemaStore
+Validate Devbox config against the schema provided by Jetify
 
 .. code-block:: yaml
     :caption: example config

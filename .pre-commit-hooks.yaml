@@ -120,7 +120,7 @@
 # and run `make generate-hooks` or `tox run -e generate-hooks-config`
 - id: check-devbox
   name: Validate Devbox config
-  description: 'Validate Devbox config against the schema provided by SchemaStore'
+  description: 'Validate Devbox config against the schema provided by Jetify'
   entry: check-jsonschema --builtin-schema vendor.devbox
   language: python
   files: ^devbox\.json$
