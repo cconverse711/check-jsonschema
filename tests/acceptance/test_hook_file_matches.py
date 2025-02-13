@@ -150,6 +150,10 @@ _HOOKID_PATH_MAP = {
             ".travis",
         ),
     },
+    "check-devbox": {
+        "good": ("devbox.json",),
+        "bad": ("path/to/devbox.json",),
+    },
 }
 
 

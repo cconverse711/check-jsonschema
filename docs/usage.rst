@@ -94,6 +94,7 @@ SchemaStore and other sources:
 - ``vendor.cloudbuild``
 - ``vendor.compose-spec``
 - ``vendor.dependabot``
+- ``vendor.devbox``
 - ``vendor.drone-ci``
 - ``vendor.github-actions``
 - ``vendor.github-workflows``

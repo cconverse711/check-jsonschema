@@ -122,6 +122,19 @@ SCHEMA_CATALOG: dict[str, dict[str, t.Any]] = {
             "types": "yaml",
         },
     },
+    "devbox": {
+        "url": _githubusercontent_url(
+            "jetify-com",
+            "devbox",
+            "main",
+            ".schema/devbox.schema.json",
+        ),
+        "hook_config": {
+            "name": "Validate Devbox config",
+            "files": r"^devbox\.json$",
+            "types": "json",
+        },
+    },
     "drone-ci": {
         "url": "https://json.schemastore.org/drone.json",
         "hook_config": {
