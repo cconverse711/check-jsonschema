@@ -127,7 +127,7 @@ SCHEMA_CATALOG: dict[str, dict[str, t.Any]] = {
             "devcontainers",
             "spec",
             "main",
-            "schema/devContainer.schema.json",
+            "schemas/devContainer.schema.json",
         ),
         "hook_config": {
             "name": "Validate Development Container config",
