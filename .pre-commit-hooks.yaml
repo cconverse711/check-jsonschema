@@ -121,7 +121,7 @@
 - id: check-devcontainer
   name: Validate Development Container config
   description: 'Validate Development Container config against the schema provided by Microsoft'
-  entry: check-jsonschema --builtin-schema vendor.devcontainer
+  entry: check-jsonschema --builtin-schema vendor.devcontainer --base-uri https://raw.githubusercontent.com/devcontainers/spec/main/schemas
   language: python
   files: >
     (?x)^(

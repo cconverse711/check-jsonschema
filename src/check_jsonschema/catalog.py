@@ -135,6 +135,10 @@ SCHEMA_CATALOG: dict[str, dict[str, t.Any]] = {
                 "Validate Development Container config against the schema provided "
                 "by Microsoft"
             ),
+            "add_args": [
+                "--base-uri",
+                _githubusercontent_url("devcontainers", "spec", "main", "schemas"),
+            ],
             "files": [
                 r"^\.devcontainer/devcontainer\.json$",
                 r"^\.devcontainer\.json$",
